@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar Explorer - Facts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color:#000;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background:linear-gradient(rgba(0,0,0,0.2),rbga(0,0,0,0.2)),url(facts.jpg);
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffa500;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffa500;
+    }
+ .stars {
+      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      animation: moveStars 150s linear infinite;
+    }
+
+   
+    .facts-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .facts-section h1 {
+      font-size: 48px;
+      color: #ffae00;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .fact-card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 25px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .fact-card h2 {
+      font-size: 22px;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .fact-card h2::before {
+      content: attr(data-icon);
+      margin-right: 8px;
+      font-size: 24px;
+    }
+
+    .fact-card p {
+      font-size: 15px;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+<div class="stars"></div>
+
+  <header>
+    <div class="logo">Solar Explorer</div>
+    <nav>
+      <a href="home3.html">Home</a>
+      <a href="planet.html">Planets</a>
+      <a href="quiz.html">Quiz</a>      
+      <a href="facts.html">Facts</a>
+      <a href="faq.html">FAQ</a>
+      
+    </nav>
+  </header>
+
+  <section class="facts-section">
+    <h1>Amazing Space Facts</h1>
+    <div class="facts-grid">
+      <div class="fact-card">
+        <h2 data-icon="☀️">Sun</h2>
+        <p>The Sun holds 99.86% of the mass in our Solar System and is 109 times wider than Earth.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="☿️">Mercury</h2>
+        <p>Mercury is the smallest planet and its extreme temperature swings are wild — from -173°C to 427°C!</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♀️">Venus</h2>
+        <p>Venus rotates backward and has a surface hot enough to melt lead. It's the hottest planet.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="🌍">Earth</h2>
+        <p>Earth is the only known planet with life and has liquid water on its surface.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♂️">Mars</h2>
+        <p>Mars has the largest volcano in the solar system — Olympus Mons, which is over 22 km high.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♃">Jupiter</h2>
+        <p>Jupiter has 79 moons and the Great Red Spot — a massive storm raging for centuries.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♄">Saturn</h2>
+        <p>Famous for its beautiful rings made of ice and rock — stretching over 175,000 miles wide!</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♅">Uranus</h2>
+        <p>Uranus spins on its side, making its seasons extreme and unlike any other planet.</p>
+      </div>
+      <div class="fact-card">
+        <h2 data-icon="♆">Neptune</h2>
+        <p>Neptune has supersonic winds — the fastest in the solar system, reaching 2,100 km/h!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Solar System Explorer. All Rights Reserved.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <title>FAQ | Solar System Explorer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #1a1a40, #000);
+      color: #f0f0f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+ header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+.logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: orange;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .faq-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #a1c4fd;
+    }
+    details {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1rem 1.2rem;
+      border-radius: 0.7rem;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-left: 4px solid #a1c4fd;
+    }
+    details:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    summary {
+      font-weight: 600;
+      font-size: 1.15rem;
+      outline: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      content: '▶';
+      color: #a1c4fd;
+      padding-right: 8px;
+      transition: transform 0.3s;
+    }
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: bblack;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Solar System Explorer</h2>
+    <nav>
+      <a href="home3.html">Home</a>
+      <a href="planet.html">Planets</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="facts.html">Facts</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header> 
+   
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2><details>
+  <summary>What is the solar system?</summary>
+  <p>The solar system includes the Sun and all celestial objects that orbit around it such as planets, moons, asteroids, and comets.</p>
+</details>
+
+<details>
+  <summary>Which planet is closest to the Sun?</summary>
+  <p>Mercury is the closest planet to the Sun.</p>
+</details>
+
+<details>
+  <summary>Why is Venus hotter than Mercury?</summary>
+  <p>Despite being farther from the Sun, Venus is hotter due to its dense atmosphere that traps heat through the greenhouse effect.</p>
+</details>
+
+<details>
+  <summary>Is there water on Mars?</summary>
+  <p>There is evidence of frozen water and possibly salty liquid water under the surface of Mars.</p>
+</details>
+
+<details>
+  <summary>How many moons does Jupiter have?</summary>
+  <p>Jupiter has over 90 known moons, including the four large Galilean moons: Io, Europa, Ganymede, and Callisto.</p>
+</details>
+
+  </section>  <footer>
+    <p>&copy; 2026 Solar System Explorer. All rights reserved.</p>
+  </footer>
+</body>
+</html>

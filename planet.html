@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <title>Planets | Solar System Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #000010, #000);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: dark blue;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/ESO_-_Milky_Way.jpg') ;
+      background-position:cover;
+      max-width:100vw;
+      object-fit:cover;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .planet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .planet-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .planet-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    .planet-card img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+    .solar-map {
+      margin: 4rem auto;
+      text-align: center;
+    }
+    .solar-map img {
+      width: 100%;
+      max-width: 800px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: dark blue;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Solar System Explorer</h2>
+    <nav>
+      <a href="home3.html">Home</a>
+      <a href="planet.html">Planets</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="facts.html">Facts</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>  <section class="hero">
+    <h1>Discover the Planets</h1>
+    <p>Explore the wonders of our solar system</p>
+  </section>  <section class="solar-map">
+    <h2>Interactive Solar System</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" alt="Solar System Map">
+    <p>Hover over each card to learn about the planets!</p>
+  </section>  <section class="planet-grid">
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Mercury">
+      <h3>Mercury</h3>
+      <p>Mercury is the smallest planet and closest to the Sun. It has extreme temperature swings and no atmosphere.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
+      <h3>Venus</h3>
+      <p>Venus has a thick, toxic atmosphere and is the hottest planet due to its greenhouse effect.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+      <h3>Earth</h3>
+      <p>Earth is the only known planet to support life, with abundant water and a breathable atmosphere.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+      <h3>Mars</h3>
+      <p>Known as the Red Planet, Mars has the tallest volcano in the solar system and signs of ancient water.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+      <h3>Jupiter</h3>
+      <p>The largest planet with over 75 moons and a massive storm called the Great Red Spot.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg" alt="Saturn">
+      <h3>Saturn</h3>
+      <p>Saturn is famous for its stunning rings made of ice and rock. It has over 80 moons.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
+      <h3>Uranus</h3>
+      <p>Uranus rotates on its side and has a pale blue color due to methane in its atmosphere.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
+      <h3>Neptune</h3>
+      <p>Neptune is a windy blue planet, known for its strong storms and deep blue color.</p>
+    </div>
+    <div class="planet-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" alt="Pluto">
+      <h3>Pluto</h3>
+      <p>Pluto is a dwarf planet in the Kuiper Belt. It has a heart-shaped glacier and thin atmosphere.</p>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2026 Solar System Explorer. All rights reserved.</p>
+  </footer>
+</body>
+</html>
